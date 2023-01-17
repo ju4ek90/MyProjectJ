@@ -21,6 +21,3 @@ public class CalculatorApplication {
     }
 }
 
-//    Using a Test Driven and Object Oriented approach, create a simple String Calculator which covers the following requirements:
-//        4. does not support negative numbers
-//        Java SE (any version) and JUnit (any version) are the only libraries allowed
