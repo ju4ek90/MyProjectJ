@@ -1,8 +1,5 @@
 package com.juli.calculator.input;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -61,7 +58,6 @@ public class InputParser {
                 numbers.add(Integer.parseInt(s));
         }
 
-        System.out.println(numbers);
         return numbers;
     }
 }
