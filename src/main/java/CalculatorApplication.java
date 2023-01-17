@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 
 public class CalculatorApplication {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
 
         System.out.print("Please, input your numbers: ");
 

@@ -4,10 +4,10 @@ import com.juli.calculator.TestData;
 import com.juli.calculator.calculations.Calculator;
 import com.juli.calculator.calculations.SumOperation;
 import com.juli.calculator.input.InputParser;
+import org.junit.jupiter.api.Test;
 
-import org.junit.Test;
-
-import static junit.framework.TestCase.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class InputTest {
 
@@ -49,5 +49,10 @@ public class InputTest {
     @Test
     public void addsNumbersWithCommaSpaces() {
         assertEquals(TestData.RESULTS, createCalculator(TestData.INPUT_WITH_COMMA_SPACES).makeCalculation(new SumOperation()));
+    }
+
+    @Test
+    public void addsNumbersWithMinus() {
+        assertThrows(NumberFormatException.class, () -> createCalculator(TestData.INPUT_INCORRECT).makeCalculation(new SumOperation()));
     }
 }

@@ -22,7 +22,8 @@ public class InputParser {
 
         if (inputLine.contains(NOT_ALLOWED_2)) {
             System.out.println(ERROR_MESSAGE);
-            System.exit(1);
+            throw new NumberFormatException();
+//            System.exit(1);
         } else {
             if (inputLine.contains(EMPTY_3)) {
                 inputLine = inputLine.replace(EMPTY_3, ZERO);
